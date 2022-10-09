@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="box">
+    <h2>
+        {{ page.title }}
+    </h2>
+    <p>&emsp;tags: {% for tag in page.taxonomies["tags"] -%} <a href="{%- set _tag = get_taxonomy_url(kind="tags", name=tag) -%}{{ _tag }}">{{ tag }}</a>{% endfor %}
+        <br>&emsp;<strong>{{ page.date }}</strong></p>
+</div>
+<div class="box">
+    {{ page.content | safe }}
+</div>
+{% endblock content %}
