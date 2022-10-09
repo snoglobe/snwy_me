@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500display=swap');
 
-@font-face {
-    font-family: "Alagard";
-    src: url("alagard.ttf");
-}
-
 body {
     background-image: url("background.jpg");
     background-size: cover;
@@ -16,7 +11,7 @@ body {
 }
 
 h1 {
-    font-family: "Alagard", serif;
+    font-family: "Silkscreen", serif;
     margin-top: 0.5%;
     margin-bottom: 1%;
 }
@@ -29,7 +24,7 @@ hr {
 }
 
 h2 {
-    font-family: "Alagard", serif;
+    font-family: "Silkscreen", serif;
     margin-bottom: 0.5%;
     margin-top: 1%;
 }
