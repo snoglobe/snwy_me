@@ -1,16 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- <div class="box">
-    <h2>{{ section.title }}</h2>
-    <ul>
-        {% for page in section.pages %}
-        <li><p><a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-            <br>tags: {% for tag in page.taxonomies["tags"] -%} <a href="{%- set _tag = get_taxonomy_url(kind="tags", name=tag) -%}{{ _tag }}">{{ tag }}</a> {% endfor %}
-            <br>{{ page.date }}</p></li>
-        {% endfor %}
-    </ul>
-</div> -->
 {% for page in section.pages %}
 <div class="box">
     <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
