@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500display=swap');
+
+@font-face {
+    font-family: "Alagard";
+    src: url("alagard.ttf");
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f0d1ff;
+}
+
+h1 {
+    font-family: "Alagard", serif;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+hr {
+    color: #f0d1ff;
+    background-color: #f0d1ff;
+    height: 1px;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-family: "Alagard", serif;
+    margin-bottom: 0.5%;
+    margin-top: 1%;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 75%;
+    min-width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+
+@media screen and (min-width: 800px) and (min-height: 800px) {
+    .outer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+}
+
+.box {
+    background: rgba(30, 17, 36, 0.25);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2%;
+    padding: 1%;
+    border: 2px solid #f0d1ff;
+    border-radius: 10px / 10px;
+}
+
+a {
+    color: hotpink;
+}
