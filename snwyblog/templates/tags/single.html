@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block meta %}
+    <meta name="twitter:title" content="tag {{ term.name }} - snwy.me" />
+    <meta property="og:site_name" content="snwy.me" />
+    <meta name="description" content="pages matching {{ term.name }}" />
+    <meta property="og:description" content="pages matching {{ term.name }}" />
+    <meta name="twitter:description" content="pages matching {{ term.name  }}" />
+{% endblock meta %}
+
 {% block content %}
 
 <div class="box">

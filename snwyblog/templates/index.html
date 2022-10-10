@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block meta %}
+    <meta name="twitter:title" content="index - snwy.me" />
+    <meta property="og:site_name" content="snwy.me" />
+    <meta name="description" content="snwy's blog" />
+    <meta property="og:description" content="snwy's blog" />
+    <meta name="twitter:description" content="snwy's blog" />
+{% endblock meta %}
+
 {% block content %}
 {% for page in section.pages %}
 <div class="box">
