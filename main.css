@@ -1,0 +1,147 @@
+:root {
+    --color-fg: #f0d1ff;
+    --color-bg: rgba(30, 17, 36, 0.25);
+    --color-link: #ff69b4;
+    --color-selection: #ff69b480;
+    --color-scrollbar-track: #490D75;
+    --color-scrollbar-thumb: var(--color-link);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::selection,
+*::-moz-selection {
+    background-color: var(--color-selection);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background: fixed url("background.jpg") center/cover no-repeat;
+    color: var(--color-fg);
+}
+
+#outer {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100%;
+    height: fit-content;
+    width: fit-content;
+}
+
+main {
+    margin: 16pt;
+    margin-top: 8pt;
+    display: inline-block;
+    flex: 0 0 auto;
+    min-width: min-content;
+    height: fit-content;
+    max-width: 600pt;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200pt) {
+    main {
+        max-width: none;
+    }
+}
+
+.box {
+    margin: 0;
+    margin-top: 16pt;
+    margin-bottom: 16pt;
+    padding: 8pt;
+    /* max-width: max-content; */
+    max-height: max-content;
+    flex: 1 1 auto;
+    text-align: initial;
+    border: 2pt solid var(--color-fg);
+    border-radius: 10pt;
+    background-color: var(--color-bg);
+    backdrop-filter: blur(16pt);
+}
+
+nav {
+    display: flex;
+    height: fit-content;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+}
+
+.links h2 {
+    margin: 0;
+    margin-left: 2ch;
+}
+
+/* text */
+
+h1 {
+    font-family: "Silkscreen", serif;
+    font-size: 32pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Silkscreen", serif;
+    font-size: 24pt;
+    margin-top: 2pt;
+    margin-bottom: 2pt;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 12pt;
+    font-family: "Poppins", sans-serif;
+    text-align: initial;
+    text-transform: lowercase;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: solid underline 1.25pt;
+}
+
+hr {
+    border: none;
+    border-radius: 20pt;
+    background-color: var(--color-fg);
+    height: 4pt;
+    margin: 0;
+    margin-top: 8pt;
+    margin-bottom: 8pt;
+}
+
+
+ul li {
+    list-style: disc;
+}

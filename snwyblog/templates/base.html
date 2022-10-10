@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog.snwy.me</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <link rel="preload" as="style" href="/main.css">
+    <link rel="preload" as="image" href="background.jpg">
+    <title>snwy.me</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <link rel="stylesheet" href="/main.css">
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#490D75" />
+    <meta name="twitter:card" content="summary" />
+    <!-- TODO: fill this in with stuff or something -->
+    <meta name="twitter:title" content="{% TODO %} - snwy.me" />
+    <meta property="og:site_name" content="snwy.me" />
+    <meta name="description" content="{% TODO %}" />
+    <meta property="og:description" content="{% TODO %}" />
+    <meta name="twitter:description" content="{% TODO %}" />
+    <!-- TODO: add absolute paths to images -->
+    <!-- <meta property="og:image" content="https://snwy.me/" /> -->
+    <!-- <meta property="twitter:image" content="https://snwy.me/" /> -->
+    <!-- TODO: make icons -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/icon144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/icon114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/icon72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/icon57.png" />
+    <link rel="apple-touch-icon" href="/img/icon192.png">
+    <link rel="shortcut icon" href="/img/icon192.png">
+    <link rel="icon" href="/img/icon.png" /> -->
+    <link rel="canonical" href="https://snwy.me" />
 </head>
+
 <body>
-<div class="outer">
-    <div class="main" style="clear: both; position: relative; margin: auto;">
-        <div class="nav">
-            <h1><a href="/" style="text-decoration: none; color: inherit">blog.snwy.me</a></h1>
-            <div class="links">
-                <h2 style="float: right"><a href="/tags">tags</a></h2>
-                <h2 style="float: right"><a href="https://snwy.me">snwy.me</a></h2>
-            </div>
-        </div>
-        <hr>
-        {% block content %} {% endblock %}
+    <div id="outer">
+        <main>
+            <nav>
+                <h1 id="site-title"><a href="/">snwy.me</a></h1>
+                <div class="links">
+                    <h2><a href="https://blog.snwy.me">Blog</a></h2>
+                    <h2><a href="https://github.com/snoglobe">GitHub</a></h2>
+                </div>
+            </nav>
+            <hr>
+            {% block content %} {% endblock %}
+        </main>
     </div>
-</div>
 </body>
+
 </html>
