@@ -6,7 +6,9 @@
     <h2>all tags</h2>
     {% for tag in terms %}
     <ul>
-        <li><p><a href="{{ tag.permalink | safe }}">{{ tag.name }}</a></p></li>
+        <li>
+            <p><a href="{{ tag.permalink | safe }}">{{ tag.name }}</a></p>
+        </li>
     </ul>
     {% endfor %}
 </div>
