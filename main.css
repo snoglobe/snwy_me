@@ -52,16 +52,9 @@ main {
     margin-top: 8pt;
     display: inline-block;
     flex: 0 0 auto;
-    min-width: min-content;
+    min-width: 600px;
     height: fit-content;
-    max-width: 600pt;
     text-align: center;
-}
-
-@media screen and (max-width: 1200pt) {
-    main {
-        max-width: none;
-    }
 }
 
 .box {
